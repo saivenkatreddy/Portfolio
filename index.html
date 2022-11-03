@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <img id="picture" src="SquarePic_20221015_05072980.jpg" width="800" height="800">
+  <br>
+  <center><button onclick="clicked()">click to know more about me</button></center>
+  <center><button onclick="process()">click for others</button></center>
+
+
+  Enter your name here : <input type="text" id="a">
+  <button onclick="myFunction()">enter</button>
+  <h1 id="b"></h1>
+
+  <h1>ABOUT ME</h1>
+  <h4>My name is sai venkat reddy guduru. I have done my master's in data science and searching for a new job in
+    software development</h4>
+  <h3>PROGRAMMING LANGUAGES</h3>
+  <ul>
+    <li>Python</li>
+    <li>Javascript</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>SQL</li>
+    <li>Data Science</li>
+    <li>Applied Statistics</li>
+    <li>Information Visualisation</li>
+  </ul>
+  <h4>Skills</h4>
+  <ul>
+    <li>Decision making</li>
+    <li>Critical thinking</li>
+    <li>Choosing</li>
+    <li>Reading</li>
+    <li>Thinking</li>
+    <li>Working</li>
+    <li>Motivated</li>
+    <li>Chipping</li>
+  </ul>
+  <h5>Google LLC is an American multinational technology company that focuses on artificial intelligence, search engine
+    technology, online advertising</h5>
+  <h2>MY TOP TEN FAVORITE MOVIES</h2>
+  <ol>
+    <li>Interstellar</li>
+    <li>Inception</li>
+    <li>Titanic</li>
+    <li>Dark</li>
+    <li>Among Us</li>
+    <li>Stranger Things</li>
+    <li>Alta Maar</li>
+    <li>Game of thrones</li>
+    <li>Steve Harrington</li>
+    <li>duitonmal</li>
+  </ol>
+  <table style="width:100%">
+    <tr>
+      <th>SNo</th>
+      <th>Class</th>
+      <th>Percentage</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>10th standard</td>
+      <td>98%</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>12th standard</td>
+      <td>92%</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>B.Tech</td>
+      <td>72%</td>
+    </tr>
+  </table>
+
+  <h2>EDUCATION BACKGROUND</h2>
+  <ul>
+    <li>10th - 98% </li>
+    <li>12th - 92%</li>
+    <li>B.Tech</li>
+    <ul>
+      <li>1st year - 85%</li>
+      <li>2nd year - 76%</li>
+      <li>3rd year - 72%</li>
+      <li>4th year - 71%</li>
+    </ul>
+    <li>Masters - 52%</li>
+  </ul>
+  <h2>SOCIAL MEDIA</h2>
+  <ul>
+    <li>Github - <a href="https://github.com/saivenkatreddy">Click here</a></li>
+    <li>LinkedIN - <a href="https://www.linkedin.com/in/sai-venkat-reddy/">Click here</a></li>
+  </ul>
+  <center><a href="https://www.linkedin.com/in/sai-venkat-reddy/">My LinkedIN</a></center>
+  <script>
+    function clicked() {
+      let a = prompt('Are you a Software Developer?(YES/NO)');
+      console.log(a);
+      let b = prompt('Are you a Student?(YES/NO)');
+      console.log(b);
+      let c = prompt('Do you have any interest in websites?(YES/NO)');
+      console.log(c);
+      let d = prompt('Front EndYES/NO)');
+      console.log(d);
+      let e = prompt('Back End?(5min/10min)');
+      console.log(e);
+    }
+    function process() {
+      let f = prompt('Do you know the number?(YES/NO)');
+      let f1 = parseInt(f);
+      document.getElementById('f').innerHTML = f1;
+
+      for (i = 0; i < 4; i++) {
+
+        let x = 100;
+        if (x === f1) {
+          alert("okay, enter!!")
+        }
+        else if (f1 > x) {
+          alert("Full high bro!!!")
+        }
+        else {
+          alert("Bro, low broooo!!!")
+        }
+      }
+      document.getElementById('f').innerHTML = f1;
+    }
+
+    function myFunction() {
+      let x = document.getElementById("a").value;
+      document.getElementById("b").innerHTML = 'welcome ' + x + ', some interesting stuff about me is below';
+    }
+
+  </script>
+</body>
+
+</html>
